@@ -28,8 +28,8 @@ loom {
 
     forge {
         convertAccessWideners = true
-        mixinConfig "vs_eureka.mixins.json"
-        mixinConfig "vs_eureka-common.mixins.json"
+        mixinConfig "valkyrien_piggies.mixins.json"
+        mixinConfig "valkyrien_piggies-common.mixins.json"
         extraAccessWideners.add loom.accessWidenerPath.get().asFile.name
     }
 }
@@ -44,6 +44,9 @@ configurations {
 
 dependencies {
     forge "net.minecraftforge:forge:$forge_version"
+
+    // Add Architectury API
+
     modApi("org.valkyrienskies:valkyrienskies-118-forge:$vs2_version") { transitive = false }
 
     implementation("org.valkyrienskies.core:api:$vs_core_version")

@@ -1,43 +1,33 @@
 {
   "schemaVersion": 1,
-  "id": "vs_eureka",
+  "id": "valkyrien_piggies",
   "version": "${version}",
-  "name": "VS Eureka Mod",
-  "description": "Basically Archimedes Ships, but with VS2 as the backend!",
+  "name": "Valkyrien Piggies",
+  "description": "Bad Piggies Inspired Addon",
   "authors": [
-    "ewoudje",
-    "Tri0de",
-    "Rubydesic"
-  ],
-  "contributors": [
-    "Copper",
-    "Anarava",
-    "VS Discord"
+    "TechTastic"
   ],
   "contact": {
     "homepage": "https://valkyrienskies.org/",
     "sources": "https://github.com/ValkyrienSkies/Eureka"
   },
   "license": "Apache-2.0",
-  "icon": "assets/vs_eureka/icon.png",
+  "icon": "assets/valkyrien_piggies/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "org.valkyrienskies.eureka.fabric.EurekaModFabric"
+      "io.github.techtastic.valkyrien_piggies.fabric.ValkyrienPiggiesModFabric"
     ],
     "client": [
-      "org.valkyrienskies.eureka.fabric.EurekaModFabric${'$'}Client"
+      "io.github.techtastic.valkyrien_piggies.fabric.ValkyrienPiggiesModFabric${'$'}Client"
     ],
     "preLaunch": [
-      "org.valkyrienskies.eureka.fabric.ValkyrienPreLaunch"
-    ],
-    "modmenu": [
-      "org.valkyrienskies.eureka.fabric.EurekaModFabric${'$'}ModMenu"
+      "io.github.techtastic.valkyrien_piggies.fabric.ValkyrienPreLaunch"
     ]
   },
   "mixins": [
-    "vs_eureka-common.mixins.json",
-    "vs_eureka.mixins.json"
+    "valkyrien_piggies-common.mixins.json",
+    "valkyrien_piggies.mixins.json"
   ],
   "depends": {
     "minecraft": ">=1.18.2",

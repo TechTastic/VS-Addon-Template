@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "io.github.techtastic.valkyrien_piggies.fabric.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "minVersion": "0.8"
+}

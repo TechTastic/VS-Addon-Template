@@ -14,14 +14,9 @@ plugins {
 }
 
 // Determine the version
-if (project.hasProperty("CustomReleaseVersion")) {
-    // Remove release/ from the version if present
-    version = project.property("CustomReleaseVersion").replaceFirst("^release/", "")
-} else {
-    String gitRevision = "git rev-parse HEAD".execute().text.trim()
+String platform = String.valueOf(loader_platform).toLowerCase()
 
-    version = eureka_version + '+' + gitRevision.substring(0, 10)
-}
+version = minecraft_version + "-" + platform + "-" + mod_version
 
 architectury {
     minecraft = rootProject.minecraft_version
