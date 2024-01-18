@@ -49,4 +49,4 @@ include("common")
 include("fabric")
 include("forge")
 
-rootProject.name = "valkyrien_piggies"
+rootProject.name = "vs_addon_template"

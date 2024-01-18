@@ -1,33 +1,33 @@
 {
   "schemaVersion": 1,
-  "id": "valkyrien_piggies",
+  "id": "vs_addon_template",
   "version": "${version}",
-  "name": "Valkyrien Piggies",
-  "description": "Bad Piggies Inspired Addon",
+  "name": "VS Addon Template",
+  "description": "An Addon Template for VS2",
   "authors": [
-    "TechTastic"
+    "You!"
   ],
   "contact": {
     "homepage": "https://valkyrienskies.org/",
     "sources": "https://github.com/ValkyrienSkies/Eureka"
   },
   "license": "Apache-2.0",
-  "icon": "assets/valkyrien_piggies/icon.png",
+  "icon": "assets/vs_addon_template/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "io.github.techtastic.valkyrien_piggies.fabric.ValkyrienPiggiesModFabric"
+      "io.github.techtastic.vs_addon_template.fabric.VSAddonTemplateModFabric"
     ],
     "client": [
-      "io.github.techtastic.valkyrien_piggies.fabric.ValkyrienPiggiesModFabric${'$'}Client"
+      "io.github.techtastic.vs_addon_template.fabric.VSAddonTemplateModFabric${'$'}Client"
     ],
     "preLaunch": [
-      "io.github.techtastic.valkyrien_piggies.fabric.ValkyrienPreLaunch"
+      "io.github.techtastic.vs_addon_template.fabric.ValkyrienPreLaunch"
     ]
   },
   "mixins": [
-    "valkyrien_piggies-common.mixins.json",
-    "valkyrien_piggies.mixins.json"
+    "vs_addon_template-common.mixins.json",
+    "vs_addon_template.mixins.json"
   ],
   "depends": {
     "minecraft": ">=1.18.2",

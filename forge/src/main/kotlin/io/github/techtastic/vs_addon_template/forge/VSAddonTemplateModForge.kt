@@ -1,17 +1,16 @@
-package io.github.techtastic.valkyrien_piggies.forge
+package io.github.techtastic.vs_addon_template.forge
 
 import net.minecraftforge.eventbus.api.IEventBus
 import net.minecraftforge.fml.common.Mod
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent
-import io.github.techtastic.valkyrien_piggies.ValkyrienPiggiesMod
-import io.github.techtastic.valkyrien_piggies.ValkyrienPiggiesMod.init
-import io.github.techtastic.valkyrien_piggies.ValkyrienPiggiesMod.initClient
+import io.github.techtastic.vs_addon_template.VSAddonTemplateMod
+import io.github.techtastic.vs_addon_template.VSAddonTemplateMod.init
+import io.github.techtastic.vs_addon_template.VSAddonTemplateMod.initClient
 import thedarkcolour.kotlinforforge.forge.MOD_BUS
 
-@Mod(ValkyrienPiggiesMod.MOD_ID)
-class ValkyrienPiggiesModForge {
+@Mod(VSAddonTemplateMod.MOD_ID)
+class VSAddonTemplateModForge {
     init {
-        // Submit our event bus to let architectury register our content on the right time
         MOD_BUS.addListener { event: FMLClientSetupEvent? ->
             clientSetup(
                 event

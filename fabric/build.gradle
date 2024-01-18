@@ -28,13 +28,14 @@ dependencies {
     modApi "net.fabricmc.fabric-api:fabric-api:${rootProject.fabric_api_version}"
     modImplementation("net.fabricmc:fabric-language-kotlin:1.10.10+kotlin.1.9.10")
 
-    // Add Architectury API
+    // Architectury API
+    include(modApi "dev.architectury:architectury-fabric:${rootProject.architectury_version}")
 
     // Mod menu
     modImplementation("com.terraformersmc:modmenu:3.2.3")
     modImplementation("me.shedaniel.cloth:cloth-config:${cloth_config_version}")
 
-    // Remove the next line if you don't want to depend on the API
+    // Valkyrien Skies 2
     modApi("org.valkyrienskies:valkyrienskies-118-fabric:${rootProject.vs2_version}")
 
     common(project(path: ":common", configuration: "namedElements")) { transitive false }

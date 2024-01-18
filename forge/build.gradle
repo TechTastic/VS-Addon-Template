@@ -28,8 +28,8 @@ loom {
 
     forge {
         convertAccessWideners = true
-        mixinConfig "valkyrien_piggies.mixins.json"
-        mixinConfig "valkyrien_piggies-common.mixins.json"
+        mixinConfig "vs_addon_template.mixins.json"
+        mixinConfig "vs_addon_template-common.mixins.json"
         extraAccessWideners.add loom.accessWidenerPath.get().asFile.name
     }
 }
@@ -45,10 +45,13 @@ configurations {
 dependencies {
     forge "net.minecraftforge:forge:$forge_version"
 
-    // Add Architectury API
+    // Architectury API
+    include(modApi "dev.architectury:architectury-forge:${rootProject.architectury_version}")
 
+    // Valkyrien Skies 2
     modApi("org.valkyrienskies:valkyrienskies-118-forge:$vs2_version") { transitive = false }
 
+    // VS Core
     implementation("org.valkyrienskies.core:api:$vs_core_version")
     implementation("org.valkyrienskies.core:api-game:$vs_core_version")
     implementation("org.valkyrienskies.core:util:$vs_core_version")
@@ -57,6 +60,7 @@ dependencies {
     common(project(path: ":common", configuration: "namedElements")) { transitive false }
     shadowCommon(project(path: ":common", configuration: "transformProductionForge")) { transitive = false }
 
+    // Kotlin for Forge
     implementation "thedarkcolour:kotlinforforge:$forge_kotlin_version"
 }
 

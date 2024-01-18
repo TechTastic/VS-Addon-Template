@@ -1,19 +1,19 @@
-package io.github.techtastic.valkyrien_piggies.fabric;
+package io.github.techtastic.vs_addon_template.fabric;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.api.ModInitializer;
-import io.github.techtastic.valkyrien_piggies.ValkyrienPiggiesMod;
+import io.github.techtastic.vs_addon_template.VSAddonTemplateMod;
 import org.valkyrienskies.mod.fabric.common.ValkyrienSkiesModFabric;
 
-public class ValkyrienPiggiesModFabric implements ModInitializer {
+public class VSAddonTemplateModFabric implements ModInitializer {
     @Override
     public void onInitialize() {
         // force VS2 to load before eureka
         new ValkyrienSkiesModFabric().onInitialize();
 
-        ValkyrienPiggiesMod.init();
+        VSAddonTemplateMod.init();
     }
 
     @Environment(EnvType.CLIENT)
@@ -21,7 +21,7 @@ public class ValkyrienPiggiesModFabric implements ModInitializer {
 
         @Override
         public void onInitializeClient() {
-            ValkyrienPiggiesMod.initClient();
+            VSAddonTemplateMod.initClient();
         }
     }
 }

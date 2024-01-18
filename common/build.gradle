@@ -3,7 +3,7 @@ architectury {
 }
 
 loom {
-    accessWidenerPath = file("src/main/resources/valkyrien_piggies.accesswidener")
+    accessWidenerPath = file("src/main/resources/vs_addon_template.accesswidener")
 }
 
 dependencies {
@@ -11,10 +11,13 @@ dependencies {
     // Do NOT use other classes from fabric loader
     modImplementation "net.fabricmc:fabric-loader:${rootProject.fabric_loader_version}"
 
-    // Add Architectury API
+    // Architectury API
+    modApi "dev.architectury:architectury:${rootProject.architectury_version}"
 
+    // Valkyrien Skies 2
     modApi("org.valkyrienskies:valkyrienskies-118-common:${rootProject.vs2_version}")
 
+    // VS Core
     compileOnly("org.valkyrienskies.core:api:${rootProject.vs_core_version}")
     compileOnly("org.valkyrienskies.core:api-game:${rootProject.vs_core_version}")
     compileOnly("org.valkyrienskies.core:util:${rootProject.vs_core_version}")

@@ -4,30 +4,30 @@ issueTrackerURL = "https://github.com/ValkyrienSkies/Valkyrien-Skies-2/issues"
 license = "Apache-2.0"
 
 [[mods]]
-modId = "valkyrien_piggies"
+modId = "vs_addon_template"
 version = "${version}"
-displayName = "Valkyrien Piggies"
+displayName = "VS Addon Template"
 authors = ["TechTastic"]
 description = '''
-Bad Piggies Inspired Addon
+An Addon Template for VS2
 '''
 logoFile = "icon.png"
 
-[[dependencies.valkyrien_piggies]]
+[[dependencies.vs_addon_template]]
 modId = "forge"
 mandatory = true
 versionRange = "[40.1.69,)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.valkyrien_piggies]]
+[[dependencies.vs_addon_template]]
 modId = "minecraft"
 mandatory = true
 versionRange = "[1.18.2,)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.valkyrien_piggies]]
+[[dependencies.vs_addon_template]]
 modId = "valkyrienskies"
 mandatory = true
 versionRange = "[${vs2_version},)"
