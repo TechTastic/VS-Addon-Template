@@ -1,33 +1,33 @@
 {
   "schemaVersion": 1,
-  "id": "vs_addon_template",
+  "id": "example_thrusters",
   "version": "${version}",
-  "name": "VS Addon Template",
-  "description": "An Addon Template for VS2",
+  "name": "Example Thrusters",
+  "description": "An Example VS Addon adding Thrusters!",
   "authors": [
-    "You!"
+    "TechTastic"
   ],
   "contact": {
     "homepage": "https://valkyrienskies.org/",
     "sources": "https://github.com/ValkyrienSkies/Eureka"
   },
   "license": "Apache-2.0",
-  "icon": "assets/vs_addon_template/icon.png",
+  "icon": "assets/example_thrusters/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "io.github.techtastic.vs_addon_template.fabric.VSAddonTemplateModFabric"
+      "io.github.techtastic.example_thrusters.fabric.ExampleThrustersModFabric"
     ],
     "client": [
-      "io.github.techtastic.vs_addon_template.fabric.VSAddonTemplateModFabric${'$'}Client"
+      "io.github.techtastic.example_thrusters.fabric.ExampleThrustersModFabric${'$'}Client"
     ],
     "preLaunch": [
-      "io.github.techtastic.vs_addon_template.fabric.ValkyrienPreLaunch"
+      "io.github.techtastic.example_thrusters.fabric.ValkyrienPreLaunch"
     ]
   },
   "mixins": [
-    "vs_addon_template-common.mixins.json",
-    "vs_addon_template.mixins.json"
+    "example_thrusters-common.mixins.json",
+    "example_thrusters.mixins.json"
   ],
   "depends": {
     "minecraft": ">=1.18.2",

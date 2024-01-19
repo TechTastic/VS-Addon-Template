@@ -3,7 +3,7 @@ architectury {
 }
 
 loom {
-    accessWidenerPath = file("src/main/resources/vs_addon_template.accesswidener")
+    accessWidenerPath = file("src/main/resources/example_thrusters.accesswidener")
 }
 
 dependencies {

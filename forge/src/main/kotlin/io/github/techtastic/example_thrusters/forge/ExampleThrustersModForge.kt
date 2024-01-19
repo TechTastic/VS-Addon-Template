@@ -1,15 +1,15 @@
-package io.github.techtastic.vs_addon_template.forge
+package io.github.techtastic.example_thrusters.forge
 
 import net.minecraftforge.eventbus.api.IEventBus
 import net.minecraftforge.fml.common.Mod
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent
-import io.github.techtastic.vs_addon_template.VSAddonTemplateMod
-import io.github.techtastic.vs_addon_template.VSAddonTemplateMod.init
-import io.github.techtastic.vs_addon_template.VSAddonTemplateMod.initClient
+import io.github.techtastic.example_thrusters.ExampleThrustersMod
+import io.github.techtastic.example_thrusters.ExampleThrustersMod.init
+import io.github.techtastic.example_thrusters.ExampleThrustersMod.initClient
 import thedarkcolour.kotlinforforge.forge.MOD_BUS
 
-@Mod(VSAddonTemplateMod.MOD_ID)
-class VSAddonTemplateModForge {
+@Mod(ExampleThrustersMod.MOD_ID)
+class ExampleThrustersModForge {
     init {
         MOD_BUS.addListener { event: FMLClientSetupEvent? ->
             clientSetup(

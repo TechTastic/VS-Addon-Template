@@ -1,19 +1,19 @@
-package io.github.techtastic.vs_addon_template.fabric;
+package io.github.techtastic.example_thrusters.fabric;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.api.ModInitializer;
-import io.github.techtastic.vs_addon_template.VSAddonTemplateMod;
+import io.github.techtastic.example_thrusters.ExampleThrustersMod;
 import org.valkyrienskies.mod.fabric.common.ValkyrienSkiesModFabric;
 
-public class VSAddonTemplateModFabric implements ModInitializer {
+public class ExampleThrustersModFabric implements ModInitializer {
     @Override
     public void onInitialize() {
         // force VS2 to load before eureka
         new ValkyrienSkiesModFabric().onInitialize();
 
-        VSAddonTemplateMod.init();
+        ExampleThrustersMod.init();
     }
 
     @Environment(EnvType.CLIENT)
@@ -21,7 +21,7 @@ public class VSAddonTemplateModFabric implements ModInitializer {
 
         @Override
         public void onInitializeClient() {
-            VSAddonTemplateMod.initClient();
+            ExampleThrustersMod.initClient();
         }
     }
 }
